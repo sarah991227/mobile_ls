@@ -1,0 +1,55 @@
+@charset "utf-8";
+*,*:after,*:before{box-sizing:border-box}
+/* header */
+*{text-decoration:none;list-style:none;margin:0;padding:0; color:#000;}
+header{width:100%;height:70px;line-height:70px;position:fixed;background:white;}
+.ham{left:1%;top:20%;position:absolute;}
+.cross{display:none;background:none;border:0;font-size:6rem;cursor:pointer;position:absolute;left:1%}
+/* display none if hamburger is pressed */
+.logo{font-size:3rem;position:absolute;left:20%;z-index:9999999;top:1%;}
+.icons li{float:left;padding-left:5px;padding-top:13px;padding-right:5px;}
+#box{position:absolute;right:1%;top:1%;}
+
+
+/* depth1 */
+#depth1{width:100%;position:fixed;left:-100%;/*left: 0;*/top: 70px; padding-left:10%; height:100%;}
+.category{margin-left:10%;margin-top:10%;}
+.women{display:none;}
+.men{display:none;}
+.collection{display:none;}
+
+/* depth2 */
+.category li:hover .women{display:block; margin-left:10%;}
+.category li:hover .men{display:block;margin-left:10%}
+.category li:hover .collection{display:block;margin-left:10%}
+
+/* depth3 */
+.womenbags{display:none;}
+.womenreadytowear{display:none;}
+.womenleathergoods{display:none;}
+.womenaccessories{display:none;}
+.womenfashionjewelry{display:none;}
+.womenshoes{display:none;}
+.womenfragrance{display:none;}
+
+.women li:hover .womenbags{display:block;margin-left:10%;}
+.women li:hover .womenreadytowear{display:block;margin-left:10%;}
+.women li:hover .womenleathergoods{display:block;margin-left:10%;}
+.women li:hover .womenaccessories{display:block;margin-left:10%;}
+.women li:hover .womenfashionjewelry{display:block;margin-left:10%;}
+.women li:hover .womenshoes{display:block;margin-left:10%;}
+.women li:hover .womenfragrance{display:block;margin-left:10%;}
+
+/* main banner */
+#mainbanner img{margin:0 auto;margin-top:70px;width:100%;}
+#caption{text-align:right}
+
+/* collection */
+#title1{margin:10%;font-size:1rem;}
+#shopwomen p{font-size:1.5rem;margin:10% 0 1% 10%;}
+#shopwomen #women{margin-left:10%;display:flex;}
+#women li p{font-size:0.7rem;margin:0;width:200px;}
+
+#shopmen p{font-size:1.5rem;margin:10% 0 1% 10%;}
+#shopmen #men{margin-left:10%;display:flex;}
+#men li p{font-size:0.7rem;margin:0;width:200px;}
